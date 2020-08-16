@@ -1,4 +1,4 @@
-package com.example.sunnyweather.ui
+package com.example.sunnyweather.ui.place
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
@@ -19,4 +19,10 @@ class PlaceViewModel :ViewModel() {
     fun searchPlaces(query:String){
         searchLiveData.value=query
     }
+
+    fun savePlace(place: Place)=Repository.savePlace(place)
+
+    fun getSavedPlace()=Repository.getSavedPlace()
+
+    fun isPlaceSaved()=Repository.isPlaceSaved()
 }

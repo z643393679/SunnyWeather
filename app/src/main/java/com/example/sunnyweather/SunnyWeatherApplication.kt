@@ -10,7 +10,7 @@ class SunnyWeatherApplication : Application(){
         @SuppressLint("StaticFieldLeak")
         lateinit var context: Context
 
-        const val TOKEN="填入申请的令牌值"
+        const val TOKEN="mWD88bsETmgCpQFK"
     }
 
     override fun onCreate() {
